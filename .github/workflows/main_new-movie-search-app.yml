@@ -12,6 +12,9 @@ on:
 jobs:
   build:
     runs-on: windows-latest
+    default: 
+      run: 
+        working-directory: "./1frontend"
 
     steps:
       - uses: actions/checkout@v2
