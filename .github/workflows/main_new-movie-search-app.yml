@@ -12,7 +12,7 @@ on:
 jobs:
   build:
     runs-on: windows-latest
-    default: 
+    defaults: 
       run: 
         working-directory: "./1frontend"
 
@@ -56,4 +56,4 @@ jobs:
           app-name: 'new-movie-search-app'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_5D6F3BA1F0E0434F978C4196EF54596B }}
-          package: .
+          package: "./1frontend/build"
