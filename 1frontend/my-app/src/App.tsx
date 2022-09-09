@@ -4,6 +4,9 @@ import SearchIcon from "@mui/icons-material/Search";
 import TextField from "@mui/material/TextField";
 import "./App.css";
 import { Box, Button } from "@mui/material";
+import MyHeader from "./stories/myHeader/MyHeader";
+import { SubmitForm } from "./stories/SubmitForm";
+import { Header } from "./stories/Header";
 
 
 function App() {
@@ -16,7 +19,10 @@ function App() {
 
   return (
     <div>
-      <h1 style={{textAlign: "center",
+      <MyHeader></MyHeader>
+      <h1 
+      id="head"
+      style={{textAlign: "center",
                   fontFamily: "cursive"}}>
                   Movie Search</h1>
       <div style={{ display: "flex", justifyContent: "center" }}>
@@ -34,7 +40,7 @@ function App() {
           placeholder="Search..."
           size="small"
         />
-       <Button
+       <Button id="btn"
             onClick={() => {
               search();
             }}
@@ -75,11 +81,7 @@ function App() {
           </p>
             </Box>
          
-      </div>
-         
-         
-          
-         
+      </div>  
         </div>
       )}
     </div>

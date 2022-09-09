@@ -28,6 +28,11 @@
   color: #61dafb;
 }
 
+#btn:hover {
+  transform:scale(.9);
+  transition:transform .3s cubic-bezier(.3,.86,.61,1.63);
+}
+
 #image {
   grid-area: i;
   text-align: center;
@@ -56,6 +61,13 @@
     margin: 15px auto 50px;
 }
 
+body {
+	background: linear-gradient(-45deg, #ee7752, #f4bed3, #ebeead, #a9c5bf);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -63,6 +75,18 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 @media (max-width: 640px) {
@@ -74,3 +98,4 @@
     "t";
   }
 }
+
