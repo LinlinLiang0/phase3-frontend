@@ -1,15 +1,5 @@
 This is an app where people can search the movies by keywords.
-To run this App:
-`npm start`
 
-some command that may be used to install package
-`npm install axios`
-
-mui doesn't work with react 18, so we need this command to install mui
-(https://github.com/mui/material-ui/issues/32074)
-
-`npm install @mui/material @emotion/react @emotion/styled --legacy-peer-deps`
-`npm install @mui/icons-material --legacy-peer-deps`
 
 # Getting Started with Create React App
 
